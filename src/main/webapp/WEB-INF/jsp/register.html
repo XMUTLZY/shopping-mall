@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>注册页面</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- CSS样式 -->
+<style>
+body {
+	background: url("../images/background1.jpg");
+	background-size: cover;
+}
+
+.register {
+	height: 500px;
+	width: 375px;
+	margin: 80px auto;
+	background: white;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+.form-group label {
+	padding-top: 50px;
+	margin-left: 40px;
+	float: left;
+	font-size: 15px;
+}
+
+.form-group input {
+	margin-left: 20px;
+	margin-top: 50px;
+	width: 230px;
+	height: 30px;
+	padding-left: 10px;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	float: left;
+}
+
+.form-group div.tip {
+	margin-left: 12px;
+	margin-top: 55px;
+	float: left;
+}
+
+button.btn {
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	margin-left: 80px;
+	padding: 0 20px;
+	background: #fd625e;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 50px;
+	color: #fff;
+	border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+	<div class="register">
+		<form id="form" action="../User/addUser" method="post">
+			<div class="form-group">
+				<label class="sr-only">姓名</label> <input
+					type="text" name="name" class="name" placeholder="姓名"
+					onfocus="this.placeholder=''" onblur="this.placeholder='姓名'"
+					value="" />
+				<div class="tip judge_name"></div>
+			</div>
+			<div class="form-group">
+				<label class="sr-only">手机</label> <input
+					type="text" name="phone" class="phone" placeholder="11位的手机号码"
+					onfocus="this.placeholder=''" onblur="this.placeholder='11位的手机号码'"
+					value="" />
+				<div class="tip judge_phone"></div>
+			</div>
+			<div class="form-group">
+				<label class="sr-only">密码</label> <input
+					type="password" name="password" class="password"
+					placeholder="6-18位的密码" onfocus="this.placeholder=''"
+					onblur="this.placeholder='6-18位的密码'" value="" />
+				<div class="tip judge_password"></div>
+			</div>
+			<div class="form-group">
+				<label class="sr-only">确认</label> <input
+					type="password" name="password2" class="password2"
+					placeholder="再确认一次密码" onfocus="this.placeholder=''"
+					onblur="this.placeholder='再确认一次密码'" value="" />
+				<div class="tip judge_password2"></div>
+			</div>
+			<div class="form-group">
+				<label class="sr-only">邮箱</label> <input
+					type="text" name="email" class="email" placeholder="邮箱"
+					onfocus="this.placeholder=''" onblur="this.placeholder='邮箱'"
+					value="" />
+				<div class="tip judge_email"></div>
+			</div>
+			<button type="button" class="btn">注册</button>
+		</form>
+	</div>
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/judge.js" charset="utf-8"></script>
+</body>
+</html>
